@@ -33,7 +33,7 @@ h1 {
   margin-left: 30px;
 }
 .pre {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .current .emoji {
   font-size: 60px;
@@ -42,8 +42,16 @@ h1 {
 .future .emoji {
   font-size: 30px;
 }
+.temp {
+  font-size: 40px;
+}
+
 .low-temp {
   font-size: 80%;
+}
+.temp-symbol {
+  font-size: 60%;
+  font-weight: bold;
 }
 .future {
   display: grid;

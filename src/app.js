@@ -13,20 +13,18 @@ function updateCity() {
 }
 
 function showUser(response) {
-  let tempMax = document.querySelector(".temp_max");
-  let tempMin = document.querySelector(".temp_min");
+  let temp = document.querySelector(".temp");
   let emoji = document.querySelector(".emoji");
   let city = document.querySelector("h1");
-  tempMax.innerHTML = Math.round(response.data.list[0].main.temp_max);
-  tempMin.innerHTML = Math.round(response.data.list[0].main.temp_min);
+  temp.innerHTML = Math.round(response.data.list[0].main.temp);
   city = city.innerHTML;
-  if (tempMax.innerHTML < -10) {
+  if (temp.innerHTML < -10) {
     console.log("Its cold...");
     emoji.innerHTML = "🥶";
-  } else if (tempMax.innerHTML < 0) {
+  } else if (temp.innerHTML < 0) {
     console.log("Its cold");
     emoji.innerHTML = "☃️";
-  } else if (tempMax.innerHTML < 10) {
+  } else if (temp.innerHTML < 10) {
     emoji.innerHTML = "😸";
   } else {
     emoji.innerHTML = "☀️";
