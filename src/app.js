@@ -6,29 +6,19 @@ function updateCity() {
   let inputCityFirstLetter = inputCity.charAt(0).toUpperCase();
   inputCity = inputCity.slice(1).toLowerCase();
   currentCity.innerHTML = inputCityFirstLetter + inputCity;
-  let apiKey = "5354b60afda2b7800186c06153932396";
-  let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&limit=5&units=metric&appid=${apiKey}`;
+  let apiKey = "f8f8b2941t5850dac0b4334a68o053a6";
+  let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(url).then(showUser);
-  console.log(url);
 }
 
 function showUser(response) {
   let temp = document.querySelector(".temp");
   let emoji = document.querySelector(".emoji");
   let city = document.querySelector("h1");
-  temp.innerHTML = Math.round(response.data.list[0].main.temp);
-  city = city.innerHTML;
-  if (temp.innerHTML < -10) {
-    console.log("Its cold...");
-    emoji.innerHTML = "🥶";
-  } else if (temp.innerHTML < 0) {
-    console.log("Its cold");
-    emoji.innerHTML = "☃️";
-  } else if (temp.innerHTML < 10) {
-    emoji.innerHTML = "😸";
-  } else {
-    emoji.innerHTML = "☀️";
-  }
+  temp.innerHTML = Math.round(response.data.temperature.current);
+  document
+    .querySelector("#icon")
+    .setAttribute("src", response.data.condition.icon_url);
 }
 
 let now = new Date();
@@ -52,6 +42,6 @@ currentTime.innerHTML = `${day} ${hours}:${minutes}`;
 let button = document.querySelector("button");
 button.addEventListener("click", updateCity);
 
-let apiKey = "5354b60afda2b7800186c06153932396";
-let url = `https://api.openweathermap.org/data/2.5/forecast?q=oslo&limit=5&units=metric&appid=${apiKey}`;
+let apiKey = "f8f8b2941t5850dac0b4334a68o053a6";
+let url = `https://api.shecodes.io/weather/v1/current?query=oslo&key=${apiKey}`;
 axios.get(url).then(showUser);
