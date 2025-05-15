@@ -1,88 +1,89 @@
 * {
-  font-family: "Courgette", cursive;
-  margin: 0;
-  padding: 0;
+	font-family: "Courgette", cursive;
+	margin: 0;
+	padding: 0;
 }
 h1 {
-  display: inline;
-  font-family: sans-serif;
+	display: inline;
+	font-family: sans-serif;
 }
 .main {
-  background-color: rgb(200, 237, 250);
-  max-width: 800px;
-  min-width: 600px;
-  padding: 20px;
-  margin: 0 auto;
+	background-color: rgb(200, 237, 250);
+	max-width: 900px;
+	min-width: 600px;
+	padding: 20px;
+	margin: 0 auto;
 }
 .search-bar {
-  max-width: 400px;
-  height: 50px;
+	max-width: 400px;
+	height: 50px;
 }
 .current {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  font-size: 20px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	font-size: 20px;
 }
 .current-time {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 .pre,
 .wind {
-  margin: 10px 0;
-  font-size: 15px;
+	margin: 10px 0;
+	font-size: 15px;
 }
 .wind {
-  margin-left: 30px;
+	margin-left: 30px;
 }
 .pre {
-  margin-left: 30px;
+	margin-left: 30px;
 }
 .current .emoji {
-  font-size: 60px;
-  margin: 0 20px;
+	font-size: 60px;
+	margin: 0 20px;
 }
 .future .emoji {
-  font-size: 30px;
+	font-size: 30px;
 }
 .temp {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .low-temp {
-  font-size: 80%;
+	font-size: 80%;
 }
 .temp-symbol {
-  font-size: 60%;
-  font-weight: bold;
+	font-size: 60%;
+	font-weight: bold;
 }
 .future {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  font-size: 15px;
-  margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	font-size: 15px;
+	margin-top: 30px;
 }
 .future-day {
-  border: 1px solid black;
-  text-align: center;
-  max-width: 100px;
-  max-height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	max-width: 100px;
+	max-height: 100px;
 }
 .day-name {
-  font-size: 18px;
+	font-size: 18px;
 }
 .temp-convert-btn {
-  background-color: rgb(106, 245, 255);
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  transition: 200ms all ease-in-out;
-  margin-top: 30px;
+	background-color: rgb(106, 245, 255);
+	font-size: 16px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+	transition: 200ms all ease-in-out;
+	margin-top: 30px;
 }
 .temp-convert-btn:hover {
-  transform: scale(1.06);
-  background-color: rgb(0, 238, 255);
+	transform: scale(1.06);
+	background-color: rgb(0, 238, 255);
 }
 .sign {
-  text-align: center;
+	text-align: center;
+	margin-top: 100px;
 }
